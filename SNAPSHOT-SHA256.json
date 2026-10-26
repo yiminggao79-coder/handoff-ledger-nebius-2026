@@ -1,0 +1,131 @@
+{
+  "created_at": "2026-10-26T06:12:16.989Z",
+  "scope": "source snapshot only, not submission proof",
+  "files": [
+    {
+      "path": ".dockerignore",
+      "bytes": 51,
+      "sha256": "6e0b6446d0792dfeabe93022f0b5fbb0ef0502b204fed0a6bee2f082a89ee631"
+    },
+    {
+      "path": ".env.example",
+      "bytes": 247,
+      "sha256": "db3614d873eb67dfae12c92cbdad3f947416c54908fbdeded754b15981275856"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 72,
+      "sha256": "df9556b9096d815e8e43fd1b863751bf8cbfa6534dfded7d4868480aace197f6"
+    },
+    {
+      "path": "Dockerfile",
+      "bytes": 189,
+      "sha256": "0b2e82a5ec471dec0c235879bd4641e695dc0aa7944d783c1f2740fd821c1ede"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1084,
+      "sha256": "6d6da3e2eed91d3eadc0e15b6638a32d8bb46dfc45a30411200bead39298e4d1"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2249,
+      "sha256": "dc18fb38c69d3aa650f79314dc4e66a552ad9219b10de6f4f2d9888032efe6df"
+    },
+    {
+      "path": "artifacts/smoke-evidence.json",
+      "bytes": 2172,
+      "sha256": "25faa59b77982e6af0fb88a80ba4d23ed06ae3bfd3dcb653e0124698f331aea8"
+    },
+    {
+      "path": "docs/deployment.md",
+      "bytes": 1936,
+      "sha256": "07827346afe066edb2b5c8d3369599312f70d4d3aec27c31f14117b63a217265"
+    },
+    {
+      "path": "docs/design-concept.png",
+      "bytes": 1395664,
+      "sha256": "5a100766c27b195a665a85708209d0e1f606c4c21f32b3f161cdb27e25ace656"
+    },
+    {
+      "path": "docs/event-brief.md",
+      "bytes": 1286,
+      "sha256": "aad13c6146f44212861ade5f3f12f8791d9db06a53fb238489f096540e302f5e"
+    },
+    {
+      "path": "docs/problem-log.md",
+      "bytes": 1552,
+      "sha256": "3feaad56e52368f36e2b609ea26973df133740bb4b963c98f5ccd4c45d7dc82a"
+    },
+    {
+      "path": "docs/progress.md",
+      "bytes": 1556,
+      "sha256": "0ef61e77f777889f30c6b5b09aa846e05fc7bfeb541fc01d0bd258695a601a65"
+    },
+    {
+      "path": "docs/provenance.md",
+      "bytes": 1874,
+      "sha256": "6f6aa2d73698dcc831674382a9d6b6c26816bbdb2c15d333e922c032dffb5821"
+    },
+    {
+      "path": "docs/submission-draft.md",
+      "bytes": 3390,
+      "sha256": "b8f6900ac0cf801133d13bc53dd4cf59124d6e4263abf18ac5190e176dbdd850"
+    },
+    {
+      "path": "package.json",
+      "bytes": 216,
+      "sha256": "8d41ef63fb016b13280069e11a6a299f6a19e11ed339793c16b2f8fe54036aea"
+    },
+    {
+      "path": "public/app.js",
+      "bytes": 2713,
+      "sha256": "dcb5117acc6a3f1a9177b00cce4279ed0eedbd78285bec394debbd9c840ebd0e"
+    },
+    {
+      "path": "public/index.html",
+      "bytes": 1646,
+      "sha256": "866a5a8890e91d2f92669134ed80575c63d327a2dc62fa85b46f5be2d27da411"
+    },
+    {
+      "path": "public/style.css",
+      "bytes": 3584,
+      "sha256": "b59ace8ff9afe2103d26ee9e9b4233c6e5a593c287befcc0d904d973ec2d89a3"
+    },
+    {
+      "path": "render.yaml",
+      "bytes": 549,
+      "sha256": "6511bc4b6799aac820569645d39bc7e37917f9b23fc0b62cd61d5750984889a0"
+    },
+    {
+      "path": "scripts/smoke.js",
+      "bytes": 1666,
+      "sha256": "e4840b94ba0b48bbaf191270b37a1695fd979048b97488031a83989077ae70e7"
+    },
+    {
+      "path": "src/core.js",
+      "bytes": 6561,
+      "sha256": "09ac6084af66f4f80b035aba0075dc0113111e05392581bdc4c3e725c9c0072f"
+    },
+    {
+      "path": "src/live-limit.js",
+      "bytes": 993,
+      "sha256": "e93aafa64d9ab96aaab17e092e7372948c083d3a95c5a56360bffac8e21e5069"
+    },
+    {
+      "path": "src/server.js",
+      "bytes": 2079,
+      "sha256": "a9b15fecb47926c73bc5588b0e553033af8f11ed258cff103f0904fe7eeea01d"
+    },
+    {
+      "path": "test/core.test.js",
+      "bytes": 2946,
+      "sha256": "837e20abd851b3e1b8b2937e8666989939d83053193c9b62908f1152fe2347e2"
+    },
+    {
+      "path": "test/live-limit.test.js",
+      "bytes": 871,
+      "sha256": "a17104c2cb76a48e270f0d5e32109f33909a0bf6d1842c953e8c6782b4a45e18"
+    }
+  ]
+}

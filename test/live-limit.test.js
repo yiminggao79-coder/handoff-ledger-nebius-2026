@@ -1,0 +1,4 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {createLiveGate} from '../src/live-limit.js';
+test('live limits reject invalid configuration',()=>{for(const value of ['0','-1','1.5','abc'])assert.throws(()=>createLiveGate({LIVE_DAILY_LIMIT:value}),/positive integer/);});
+test('global concurrency and cooldown release correctly',()=>{let t=0;const g=createLiveGate({},()=>t);const done=g.enter();assert.throws(()=>g.enter(),/busy/);done();assert.throws(()=>g.enter(),/cooling/);t=15000;g.enter()();});
+test('hourly and daily totals are capped, including failed reserved attempts',()=>{let t=0;const g=createLiveGate({LIVE_HOURLY_LIMIT:'2',LIVE_DAILY_LIMIT:'3'},()=>t);g.enter()();t=15000;g.enter()();t=30000;assert.throws(()=>g.enter(),/budget/);t=3600000;g.enter()();t=3615000;assert.throws(()=>g.enter(),/budget/);t=86400000;g.enter()();});

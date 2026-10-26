@@ -1,0 +1,1 @@
+{"name":"handoff-ledger","version":"0.1.0","private":true,"type":"module","license":"MIT","engines":{"node":">=22.19.0"},"scripts":{"start":"node src/server.js","test":"node --test","smoke":"node scripts/smoke.js"}}

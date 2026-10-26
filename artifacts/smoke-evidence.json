@@ -1,0 +1,71 @@
+{
+  "created_at": "2026-10-26T06:02:31.984Z",
+  "checks": 7,
+  "mode": "fixture",
+  "sponsor_live_tested": false,
+  "result": {
+    "brief": {
+      "summary": "The rollback is associated with recovering metrics. A cache-key change is a suspected cause; it still needs verification.",
+      "actions": [
+        {
+          "title": "Confirm error rate and cache recovery after rollback",
+          "priority": "high",
+          "owner": "Unassigned",
+          "evidence": [
+            "N1",
+            "N2"
+          ],
+          "status": "proposed"
+        },
+        {
+          "title": "Investigate the cache-key change as an unconfirmed cause",
+          "priority": "high",
+          "owner": "Unassigned",
+          "evidence": [
+            "N3"
+          ],
+          "status": "proposed"
+        },
+        {
+          "title": "Add regression coverage before the next deployment",
+          "priority": "medium",
+          "owner": "Unassigned",
+          "evidence": [
+            "N3"
+          ],
+          "status": "proposed"
+        }
+      ],
+      "open_questions": [
+        "Has the cache-key hypothesis been confirmed?",
+        "Who will own each next-shift action?"
+      ]
+    },
+    "notes": [
+      {
+        "id": "N1",
+        "text": "[14:12] Deployed v2.3.0. API 5xx increased and cache hit rate fell from 92% to 41%."
+      },
+      {
+        "id": "N2",
+        "text": "[14:28] Rolled back to v2.2.7. Error rate is returning to normal; cache hit rate is around 88%."
+      },
+      {
+        "id": "N3",
+        "text": "[14:35] Cache key format change is suspected, not confirmed. Verify the cause and add test coverage before the next deploy."
+      }
+    ],
+    "validation": {
+      "cited_actions": 3,
+      "total_actions": 3,
+      "reference_integrity": true,
+      "semantic_support": "Requires human review; existing note IDs do not prove the action is entailed."
+    },
+    "provenance": {
+      "mode": "fixture",
+      "source": "Original synthetic fixture; no API call",
+      "created_at": "2026-10-26T06:02:31.965Z",
+      "input_sha256": "415edb179b026b2e2d9efc2fe864557b4a59fd3abd6931b9b6399c54601b0699"
+    }
+  }
+}

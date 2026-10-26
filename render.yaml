@@ -1,0 +1,19 @@
+# Preparation only. Importing this blueprint creates an external deployment.
+services:
+  - type: web
+    name: handoff-ledger
+    runtime: node
+    plan: free
+    buildCommand: node --version
+    startCommand: node src/server.js
+    healthCheckPath: /api/status
+    envVars:
+      - key: NODE_VERSION
+        value: 24.17.0
+      - key: HOST
+        value: 0.0.0.0
+      - key: LIVE_HOURLY_LIMIT
+        value: 12
+      - key: LIVE_DAILY_LIMIT
+        value: 48
+# Add NEBIUS_API_KEY as a dashboard secret only after user approval and account setup.
